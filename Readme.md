@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Бородачев](https://up.htmlacademy.ru/adaptive/20/user/1426475).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов] .
 
 ---
 
