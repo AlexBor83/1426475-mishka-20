@@ -1,0 +1,24 @@
+.promo {
+  font-weight: bold;
+}
+
+.promo__title {
+  font-size: 27px;
+  line-height: 30px;
+  margin-top: 73px;
+  margin-bottom: 120px;
+}
+
+.promo__list a {
+  color: $wight;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.promo__item--interior {
+  background-color: $green;
+}
+
+.promo__item--toys {
+  background-color: $greendark;
+}
