@@ -1,0 +1,26 @@
+.product {
+  width: 260px;
+  border: 1px solid $bordermobile;
+  margin-bottom: 30px;
+}
+
+.product__text {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+  margin-bottom: 10px;
+}
+
+.product__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: $blacklight;
+  margin-bottom: 41px;
+}
+
+.product__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
