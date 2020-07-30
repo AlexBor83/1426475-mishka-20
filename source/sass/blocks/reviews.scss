@@ -1,0 +1,34 @@
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
+
+.reviews__item {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
+
+.reviews__author {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 30px;
+
+  &--name {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &--mail {
+    color: $blacklight;
+  }
+}
+
+.reviews__togles {
+  margin-bottom: 38px;
+}
+
+.reviews__write {
+  margin-bottom: 45px;
+}

@@ -1,0 +1,41 @@
+.form__slogan {
+  font-size: 13px;
+  line-height: 24px;
+  color: $blacklight;
+}
+
+.form__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: $green;
+  text-transform: uppercase;
+}
+
+.form__item {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  &--radio {
+    margin-bottom: 24px;
+  }
+
+  &--check {
+    margin-bottom: 45px;
+  }
+
+  &--name {
+    margin-bottom: 74px;
+  }
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: $blacklight;
+  margin-bottom: 30px;
+}
+
+.form__button {
+  margin-bottom: 55px;
+}
