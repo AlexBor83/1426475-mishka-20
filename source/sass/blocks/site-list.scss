@@ -6,4 +6,24 @@
 
 .site-list__item {
   border-bottom: 1px solid $bordermobile;
+  padding-left: 76px;
+  padding-bottom: 27px;
+  padding-top: 28px;
+
+  &--tablet {
+    a {
+      color: $blacklight;
+      font-weight: normal;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
 }

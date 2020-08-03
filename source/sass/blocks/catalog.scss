@@ -1,3 +1,26 @@
 .catalog__wrapper {
-  margin-top: 30px;
+  width: auto;
+  margin: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 50px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 52px;
+  }
 }

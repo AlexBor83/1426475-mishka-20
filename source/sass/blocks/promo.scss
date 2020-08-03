@@ -5,22 +5,67 @@
 .promo__title {
   font-size: 27px;
   line-height: 30px;
+  margin: 0 auto;
   margin-top: 73px;
   margin-bottom: 120px;
+  text-align: center;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 700px;
+  }
+}
+
+.promo__list {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 51px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .promo__list a {
   color: $wight;
   font-size: 19px;
   line-height: 24px;
+  display: block;
+  width: 130px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .promo__item {
+  padding-top: 24px;
+  padding-left: 30px;
+  padding-bottom: 31px;
+
   &--interior {
     background-color: $green;
   }
 
   &--toys {
     background-color: $greendark;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-left: 36px;
+    padding-bottom: 34px;
   }
 }

@@ -1,7 +1,19 @@
 .product {
-  width: 260px;
+  width: auto;
   border: 1px solid $bordermobile;
-  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-left: 334px;
+    position: relative;
+    min-height: 334px;
+  }
+}
+
+.product__image {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    position: absolute;
+    left: -334px;
+  }
 }
 
 .product__text {
