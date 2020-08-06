@@ -1,6 +1,6 @@
 .product {
   width: auto;
-  border: 1px solid $bordermobile;
+  border: 1px solid $border;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-left: 334px;
