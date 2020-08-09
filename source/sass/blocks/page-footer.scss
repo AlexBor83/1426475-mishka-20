@@ -2,10 +2,7 @@
   background-color: $grey;
 }
 
-.page-footer__wrapper {
-  margin: 0 30px;
-  width: auto;
-
+.page-footer__container {
   @media (min-width: $tablet-width) {
     margin: 0 50px;
     width: auto;

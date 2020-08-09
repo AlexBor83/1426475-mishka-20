@@ -4,23 +4,9 @@
   line-height: 24px;
 }
 
-.offer-week__wrapper {
-  width: 260px;
-  margin: 0 30px;
-  position: relative;
+.offer-week__container {
   display: flex;
   flex-wrap: wrap;
-
-  @media (min-width: $tablet-width) {
-    width: 668px;
-    margin: 0 50px;
-    flex-direction: column;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1050px;
-    margin: 0 50px;
-  }
 }
 
 .offer-week__name {
@@ -28,6 +14,7 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;

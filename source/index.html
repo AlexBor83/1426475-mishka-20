@@ -11,8 +11,8 @@
 <body class="page-body">
   <header class="header">
     <div class="header__container container">
-      <a class="header__logo">
-        <img src="https://via.placeholder.com" width="86" height="35" alt="Логотип инернет магазина mishka">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип инернет магазина mishka">
       </a>
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -24,45 +24,56 @@
           </a>
         </li>
         <li class=" header__item header__item--active">
-            <a href="#" class="header__link header__link--order">
-              Вязание на заказ
-            </a>
+          <a href="#" class="header__link header__link--order">
+            Вязание на заказ
+          </a>
         </li>
       </ul>
       <ul class="header__nav header__nav--second">
         <li class="header__item">
-          <a href="#" class="header__link header__link--search">Поиск по сайту</a>
+          <a href="#" class="header__link header__link--search">
+            Поиск по сайту
+          </a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link header__link--cart">Корзина: пока пуста</a>
+          <a href="#" class="header__link header__link--cart">
+            Корзина: пока пуста
+          </a>
         </li>
       </ul>
       <ul class="header__nav header__nav--third">
         <li class="header__item">
-          <a href="#" class="header__link header__link--receipts">Новые поступления</a>
+          <a href="#" class="header__link header__link--receipts">
+            Новые поступления
+          </a>
         </li>
         <li class="header__item">
-          <a href="#" class="header__link header__link--sale">Распродажа</a>
+          <a href="#" class="header__link header__link--sale">
+            Распродажа
+          </a>
         </li>
       </ul>
-      <span class="header__delivery">Бесплатная доставка по России</span>
+      <span class="header__delivery">
+        Бесплатная доставка по России
+      </span>
     </div>
   </header>
   <main class="page-main">
-
     <section class="promo">
-      <h1 class="promo__title">
-        Милые штуки ручной <br> работы для дома
-      </h1>
-      <a class="promo__item promo__item--interior" href="#">
-        Предметы интерьера
-      </a>
-      <a class="promo__item promo__item--toys" href="#">
-        Детские игрушки
-      </a>
+      <div class="promo__container container">
+        <h1 class="promo__title">
+          Милые штуки ручной <br> работы для дома
+        </h1>
+        <a class="promo__item promo__item--interior" href="#">
+          Предметы интерьера
+        </a>
+        <a class="promo__item promo__item--toys" href="#">
+          Детские игрушки
+        </a>
+      </div>
     </section>
     <article class="offer-week">
-      <div class="offer-week__wrapper">
+      <div class="offer-week__container container">
         <h2 class="offer-week__name">
           Вязаные корзинки
         </h2>
@@ -72,6 +83,7 @@
         <p class="offer-week__text">
           Экологически чистая пряжа,ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
+
         <dl class="offer-week__stats">
           <div class="offer-week__item">
             <dt class="offer-week__specification">
@@ -109,7 +121,7 @@
       </div>
     </article>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__container container">
         <h2 class="advantages__title">
           Коротко о нас:
         </h2>
@@ -118,10 +130,10 @@
             Экологически чистые материалы
           </li>
           <li class="advantages__item advantages__item--style">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль по&nbsp;российской цене
           </li>
           <li class="advantages__item advantages__item--photo">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки на&nbsp;фотографиях
           </li>
           <li class="advantages__item advantages__item--handmade">
             Связано вручную с любовью и умилением
@@ -136,7 +148,7 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper slider">
+      <div class="reviews__container container slider">
         <h2 class="reviews__title">
           Отзывы
         </h2>
@@ -170,40 +182,42 @@
       </a>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">
-        Контакты
-      </h2>
-      <dl class="contacts__list">
-        <div class="contacts__item">
-          <dt class="contacts__specification">
-            e-mail:
-          </dt>
-          <dd class="contacts__description">
-            <a href="malito:info@mimimishkashop.ru">
-              info@mimimishkashop.ru
-            </a>
-          </dd>
-        </div>
-        <div class="contacts__item">
-          <dt class="contacts__specification">
-            адрес:
-          </dt>
-          <dd class="contacts__description">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </dd>
-        </div>
-      </dl>
-      <a href="#" class="contacts__map">
-        <img src="https://via.placeholder.com/150x150" width="322" height="457" alt="карта с адресом офиса">
-      </a>
-      <a class="contacts__write button" href="#">
-        Напишите нам
-      </a>
+      <div class="contacts__container container">
+        <h2 class="contacts__title">
+          Контакты
+        </h2>
+        <dl class="contacts__list">
+          <div class="contacts__item">
+            <dt class="contacts__specification">
+              e-mail:
+            </dt>
+            <dd class="contacts__description">
+              <a href="malito:info@mimimishkashop.ru">
+                info@mimimishkashop.ru
+              </a>
+            </dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__specification">
+              адрес:
+            </dt>
+            <dd class="contacts__description">
+              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </dd>
+          </div>
+        </dl>
+        <a href="#" class="contacts__map">
+          <img src="https://via.placeholder.com/150x150" width="322" height="457" alt="карта с адресом офиса">
+        </a>
+        <a class="contacts__write button" href="#">
+          Напишите нам
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__container container">
       <a class="page-footer__logo">
         <img src="https://via.placeholder.com" width="86" height="35" alt="Логотип инернет магазина mishka">
       </a>
