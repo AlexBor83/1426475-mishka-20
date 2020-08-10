@@ -9,48 +9,61 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип инернет магазина mishka">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип инернет магазина mishka">
+      </a>
+      <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>
+      <ul class="header__nav header__nav--first">
+        <li class="header__item header__item--active">
+          <a class="header__link header__link--catalog">
             Каталог товаров
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#">
+        <li class=" header__item header__item--active">
+          <a href="form.html" class="header__link header__link--order">
             Вязание на заказ
           </a>
         </li>
-        <li class="site-list__item site-search">
-          <form class="site-search__form" action="https://echo.htmlacademy.ru" method="GET">
-            <label>
-              <input type="text" name="search" class="site-search__input" placeholder="Поиск по сайту">
-            </label>
-            <button type="submit" class="visually-hidden">Кнопка поиска</button>
-          </form>
+      </ul>
+      <ul class="header__nav header__nav--second">
+        <li class="header__item">
+          <a href="#" class="header__link header__link--search">
+            Поиск по сайту
+          </a>
         </li>
-        <li class="site-list__item">
-          <a href="#">
+        <li class="header__item">
+          <a href="#" class="header__link header__link--cart">
             Корзина: пока пуста
           </a>
         </li>
       </ul>
-    </nav>
+      <ul class="header__nav header__nav--third">
+        <li class="header__item">
+          <a href="#" class="header__link header__link--receipts">
+            Новые поступления
+          </a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link header__link--sale">
+            Распродажа
+          </a>
+        </li>
+      </ul>
+      <span class="header__delivery">
+        Бесплатная доставка по России
+      </span>
+    </div>
   </header>
   <main class="page-main">
     <section class="page-main__catalog catalog">
       <h1 class="catalog__title page-main__title">
         Каталог товаров
       </h1>
-      <div class="catalog__wrapper">
+      <div class="catalog__container container">
         <ul class="catalog__list">
           <li class="catalog__item product">
             <a href="#" class="product__link">
@@ -93,7 +106,7 @@
               <img class="product__image" src="https://via.placeholder.com/150x150" width="260" height="195"
                 alt="Круглая корзинка с игрушками, связанная из зеленой и белой пряжи">
               <p class="product__text">
-                Большая корзинка для игрушек
+                Большая корзинка для&nbsp;игрушек
               </p>
             </a>
             <p class="product__description">
@@ -110,23 +123,25 @@
       </div>
     </section>
     <section class="product-made">
-      <h2 class="product-made__title">
-        Процесс производства
-      </h2>
-      <div class="product-made__video">
-        <video preload="none" width="260" height="150" poster="https://via.placeholder.com/150x150"></video>
+      <div class="product-made__container container">
+        <h2 class="product-made__title">
+          Процесс производства
+        </h2>
+        <div class="product-made__video">
+          <video preload="none" width="260" height="150" poster="https://via.placeholder.com/150x150"></video>
+        </div>
+        <p class="product-made__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="product-made__order button" href="#">
+          сделать заказ
+        </a>
       </div>
-      <p class="product-made__text">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="product-made__order button" href="#">
-        сделать заказ
-      </a>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__container container">
       <a class="page-footer__logo">
         <img src="https://via.placeholder.com" width="86" height="35" alt="Логотип инернет магазина mishka">
       </a>

@@ -3,6 +3,11 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .advantages__list {
@@ -33,5 +38,15 @@
 
   &--present {
     width: 200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+    width: 300px;
+
+    &--materials {
+      width: 230px;
+    }
   }
 }
