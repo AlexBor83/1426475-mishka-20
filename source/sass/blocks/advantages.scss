@@ -1,15 +1,58 @@
+
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 83px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .advantages__item {
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 83px;
+  font-weight: bold;
+  padding-top: 83px;
 
-  &:last-child {
-    margin-bottom: 58px;
+  &--materials {
+    width: 170px;
+  }
+
+  &--handmade {
+    width: 200px;
+  }
+
+  &--present {
+    width: 200px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 300px;
+
+    &--materials {
+      width: 230px;
+    }
   }
 }

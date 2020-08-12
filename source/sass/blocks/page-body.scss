@@ -1,5 +1,6 @@
 .page-body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: $black;
-  box-sizing: border-box;
+  min-height: 100%;
+  min-width: 320px;
 }
