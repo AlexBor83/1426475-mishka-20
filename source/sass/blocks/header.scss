@@ -36,13 +36,9 @@
     margin-left: 100px;
   }
 
-  /*Не пойму зачем запись, высота и ширина равна лого
-   img {
+  img {
     display: block;
-    width: 86px;
-    height: 35px;
   }
-  */
 }
 
 .header__toggle {
@@ -107,6 +103,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 33px;
     padding-bottom: 32px;
+    font-size: 15px;
   }
 
   &--search {

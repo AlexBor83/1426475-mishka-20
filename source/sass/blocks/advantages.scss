@@ -8,6 +8,11 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .advantages__list {
@@ -26,6 +31,7 @@
 .advantages__item {
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
   padding-top: 83px;
 
   &--materials {
@@ -41,7 +47,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 22px;
     width: 300px;
 
