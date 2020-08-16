@@ -1,11 +1,119 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__container {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+    padding-right: 550px;
+  }
+
+  &--button {
+    padding: 0;
+  }
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
-  margin-top: 38px;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+    width: 290px;
+  }
 }
 
-.contacts__list,
-.contacts__description a {
+.contacts__list {
   color: $blacklight;
+  font-size: 15px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__specification {
+  width: 76px;
+
+  @media (min-width: $desktop-width) {
+    width: 82px;
+  }
+}
+
+.contacts__description {
+  margin: 0;
+  width: 180px;
+}
+
+.contacts__mail {
+  color: $blacklight;
+  border-bottom: 1px solid $green;
+}
+
+.contacts__map {
+  display: block;
+  margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
+    margin: 0;
+    position: absolute;
+    right: 50px;
+    top: 5px;
+  }
+
+  /*Проблема с картинкой чтоб тянулось на весь экран убрал ее из контейнера, но да десктопе она съезжает*/
+
+  img {
+    display: block;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 527px;
+      height: 457px;
+    }
+  }
+}
+
+.contacts__write {
+  margin: 40px auto;
+  display: block;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin: 55px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 225px;
+  }
 }
