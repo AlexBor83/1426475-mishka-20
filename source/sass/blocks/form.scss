@@ -1,7 +1,84 @@
+.form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--color {
+      padding-top: 66px;
+      padding-bottom: 60px;
+    }
+
+    &--name {
+      padding-top: 67px;
+      padding-bottom: 50px;
+    }
+
+    &--aboutme {
+      padding-top: 65px;
+    }
+
+    &--button {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 97px;
+    padding-right: 225px;
+  }
+}
+
 .form__slogan {
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 29px;
   color: $blacklight;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 81px;
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 702px;
+    margin: 115px auto 80px auto;
+  }
+}
+
+.form__field {
+  margin-bottom: 33px;
+
+  textarea {
+    margin-top: 20px;
+    padding: 17px;
+    width: 100%;
+    border: 2px solid $black;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    textarea {
+      margin-top: 0;
+    }
+
+    &--background {
+      background-color: $grey;
+    }
+
+    &--textarea {
+      display: flex;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 63px;
+    }
+  }
 }
 
 .form__legend {
@@ -9,6 +86,57 @@
   line-height: 16px;
   color: $green;
   text-transform: uppercase;
+  font-weight: bold;
+
+  input {
+    padding: 17px 0;
+    border: none;
+    border-bottom: 2px solid $black;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 181px;
+
+    &--textarea {
+      margin-top: 9px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 140px;
+  }
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    &--color {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 60px;
+      column-gap: 150px;
+    }
+
+    &--name {
+      flex-grow: 1;
+    }
+
+    &--aboutme {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--color {
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 57px;
+      column-gap: 95px;
+    }
+  }
 }
 
 .form__item {
@@ -25,17 +153,132 @@
   }
 
   &--name {
-    margin-bottom: 74px;
+    margin-bottom: 54px;
+
+    input {
+      padding: 17px 0;
+      border: none;
+      border-bottom: 2px solid $black;
+      width: 100%;
+      font-weight: normal;
+    }
+  }
+
+  &--aboutme {
+    color: $green;
+    margin-bottom: 35px;
+
+    input {
+      padding: 0;
+      padding-top: 14px;
+      padding-bottom: 20px;
+      font-weight: normal;
+      border: none;
+      border-bottom: 2px solid $black;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+
+    &--radio {
+      margin-bottom: 58px;
+    }
+
+    &--check {
+      margin: 0;
+    }
+
+    &--name {
+      margin-bottom: 40px;
+      display: flex;
+
+      input {
+        padding-top: 0;
+        padding-left: 18px;
+      }
+    }
+
+    &--name:last-child {
+      margin-bottom: 0;
+    }
+
+    &--aboutme {
+      display: flex;
+
+      input {
+        padding-top: 0;
+        padding-left: 18px;
+        background-color: $grey;
+      }
+    }
+  }
+}
+
+.form__label {
+  @media (min-width: $tablet-width) {
+    &--name {
+      margin-right: 25px;
+    }
+
+    &--aboutme {
+      margin-right: 160px;
+      width: 100px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--aboutme {
+      margin-right: 110px;
+    }
+  }
+}
+
+.form-check__input {
+  display: none;
+}
+
+.form-check__disk {
+  margin-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form-check__check {
+  margin-left: 62px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
 .form__text {
+  display: block;
   font-size: 14px;
   line-height: 16px;
   color: $blacklight;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
 }
 
 .form__button {
   margin-bottom: 55px;
+  background-color: $wight;
+  border-color: $blacklight;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 180px;
+  }
 }
