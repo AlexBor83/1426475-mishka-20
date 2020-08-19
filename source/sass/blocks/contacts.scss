@@ -1,22 +1,33 @@
-.contacts {
-  position: relative;
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1150px;
+    padding: 100px 50px 105px 225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.contacts__container {
+.contacts__wrap {
+  padding: 0 30px;
   padding-bottom: 40px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 50px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
-    padding-right: 550px;
-  }
-
-  &--button {
+    width: 291px;
     padding: 0;
+    margin: 0;
+    padding-top: 79px;
+    align-self: start;
   }
 }
 
@@ -35,8 +46,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 35px;
-    width: 290px;
+    margin-bottom: 34px;
   }
 }
 
@@ -52,11 +62,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin: 0;
+    justify-content: flex-start;
+  }
 }
 
 .contacts__item {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    &--mail {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .contacts__specification {
@@ -85,21 +107,11 @@
     width: 527px;
     height: 457px;
     margin: 0;
-    position: absolute;
-    right: 50px;
-    top: 5px;
   }
-
-  /*Проблема с картинкой чтоб тянулось на весь экран убрал ее из контейнера, но да десктопе она съезжает*/
 
   img {
     display: block;
     width: 100%;
-
-    @media (min-width: $desktop-width) {
-      width: 527px;
-      height: 457px;
-    }
   }
 }
 
@@ -114,6 +126,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 225px;
+    margin: 0;
   }
 }

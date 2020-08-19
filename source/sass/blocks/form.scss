@@ -59,6 +59,7 @@
     padding: 17px;
     width: 100%;
     border: 2px solid $black;
+    resize: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -146,6 +147,7 @@
 
   &--radio {
     margin-bottom: 24px;
+    margin-left: 60px;
   }
 
   &--check {
@@ -184,6 +186,7 @@
 
     &--radio {
       margin-bottom: 58px;
+      margin-left: 0;
     }
 
     &--check {
@@ -240,8 +243,6 @@
 }
 
 .form-check__disk {
-  margin-left: 60px;
-
   @media (min-width: $tablet-width) {
     margin: 0;
   }

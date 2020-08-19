@@ -4,8 +4,6 @@
 
 .page-footer__container {
   @media (min-width: $tablet-width) {
-    margin: 0 50px;
-    width: auto;
     display: flex;
     justify-content: space-between;
   }
