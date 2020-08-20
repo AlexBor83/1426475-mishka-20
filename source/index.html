@@ -159,7 +159,7 @@
               и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
               больше лайков!
             </p>
-            <div class="reviews__author reviews__author--info">
+            <div class="reviews__author">
               <cite class="reviews__author reviews__author--name">
                 Анастасия Красильникова
               </cite>
@@ -183,30 +183,32 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container container">
-        <h2 class="contacts__title">
-          Контакты
-        </h2>
-        <dl class="contacts__list">
-          <div class="contacts__item">
-            <dt class="contacts__specification">
-              e-mail:
-            </dt>
-            <dd class="contacts__description">
-              <a href="malito:info@mimimishkashop.ru">
-                info@mimimishkashop.ru
-              </a>
-            </dd>
-          </div>
-          <div class="contacts__item">
-            <dt class="contacts__specification">
-              адрес:
-            </dt>
-            <dd class="contacts__description">
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-            </dd>
-          </div>
-        </dl>
+      <div class="contacts__container">
+        <div class="contacts__wrap">
+          <h2 class="contacts__title">
+            Контакты
+          </h2>
+          <dl class="contacts__list">
+            <div class="contacts__item contacts__item--mail">
+              <dt class="contacts__specification">
+                e-mail:
+              </dt>
+              <dd class="contacts__description">
+                <a class="contacts__mail" href="malito:info@mimimishkashop.ru">
+                  info@mimimishkashop.ru
+                </a>
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__specification">
+                адрес:
+              </dt>
+              <dd class="contacts__description">
+                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              </dd>
+            </div>
+          </dl>
+        </div>
         <a href="#" class="contacts__map">
           <img src="https://via.placeholder.com/150x150" width="322" height="457" alt="карта с адресом офиса">
         </a>
@@ -216,7 +218,6 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__container container">
       <a class="page-footer__logo">
@@ -251,6 +252,34 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <h2 class="modal__title">
+      Добавить в&nbsp;корзину
+    </h2>
+    <span class="modal__text">
+      Выберите размер:
+    </span>
+    <Ul class="modal__list">
+      <li class="modal__item">
+        <button class="modal__size">
+          s
+        </button>
+      </li>
+      <li class="modal__item">
+        <button class="modal__size">
+          m
+        </button>
+      </li>
+      <li class="modal__item">
+        <button class="modal__size">
+          l
+        </button>
+      </li>
+    </Ul>
+    <a class="modal__button button" href="#">
+      Добавить
+    </a>
+  </section>
 </body>
 
 </html>
