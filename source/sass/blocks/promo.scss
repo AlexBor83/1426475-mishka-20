@@ -47,12 +47,44 @@
   display: block;
   width: 100%;
 
+  &::before {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    right: 50px;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
   &--interior {
+    position: relative;
     background-color: $green;
   }
 
+  &--interior::before {
+    background-image: url("../../img/icon-interior.svg");
+    width: 40px;
+    height: 62px;
+  }
+
   &--toys {
+    position: relative;
     background-color: $greendark;
+  }
+
+  &--toys::before {
+    background-image: url("../../img/icon-toy.svg");
+    width: 60px;
+    height: 60px;
+    right: 40px;
   }
 
   @media (min-width: $tablet-width) {
