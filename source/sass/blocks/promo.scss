@@ -47,20 +47,19 @@
   display: block;
   width: 100%;
 
-  &::before {
+  & svg {
     position: absolute;
-    content: "";
-    background-position: center;
-    background-repeat: no-repeat;
+    right: 20px;
+    top: 25px;
+    fill: $greendarkvery;
     opacity: 0.5;
-    right: 50px;
   }
 
-  &:hover::before {
+  &:hover svg {
     opacity: 0.7;
   }
 
-  &:active::before {
+  &:active svg {
     opacity: 0.3;
   }
 
@@ -69,10 +68,11 @@
     background-color: $green;
   }
 
-  &--interior::before {
-    background-image: url("../../img/icon-interior.svg");
-    width: 40px;
-    height: 62px;
+  /*Чет помоему не совсем получилось*/
+
+  &--interior:hover {
+    transform: translateY(-5px);
+    padding-bottom: 35px;
   }
 
   &--toys {
@@ -80,11 +80,9 @@
     background-color: $greendark;
   }
 
-  &--toys::before {
-    background-image: url("../../img/icon-toy.svg");
-    width: 60px;
-    height: 60px;
-    right: 40px;
+  &--toys:hover {
+    transform: translateY(-5px);
+    padding-bottom: 35px;
   }
 
   @media (min-width: $tablet-width) {

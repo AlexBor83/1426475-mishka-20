@@ -11,4 +11,13 @@
   vertical-align: middle;
   display: inline-block;
   padding: 16px 0;
+
+  &:hover {
+    color: $wight;
+    background-color: $blacklight;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

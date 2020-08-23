@@ -39,17 +39,63 @@
   line-height: 20px;
   font-weight: bold;
   padding-top: 83px;
+  position: relative;
 
   &--materials {
     width: 175px;
   }
 
-  &--handmade {
+  &--present {
     width: 200px;
   }
 
-  &--present {
-    width: 200px;
+  &::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--materials::after {
+    content: "";
+    background-image: url("../../img/icon-feature-flower.svg");
+    width: 33px;
+    height: 38px;
+  }
+
+  &--style::after {
+    content: "";
+    background-image: url("../../img/icon-feature-money.svg");
+    width: 50px;
+    height: 27px;
+  }
+
+  &--photo::after {
+    content: "";
+    background-image: url("../../img/icon-feature-heart.svg");
+    width: 34px;
+    height: 27px;
+  }
+
+  &--handmade::after {
+    content: "";
+    background-image: url("../../img/icon-feature-ball.svg");
+    width: 35px;
+    height: 34px;
+  }
+
+  &--manufacturer::after {
+    content: "";
+    background-image: url("../../img/icon-feature-rocket.svg");
+    width: 55px;
+    height: 23px;
+  }
+
+  &--present::after {
+    content: "";
+    background-image: url("../../img/icon-feature-gift.svg");
+    width: 33px;
+    height: 32px;
   }
 
   @media (min-width: $tablet-width) {

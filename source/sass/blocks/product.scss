@@ -1,5 +1,16 @@
 .product {
   border: 1px solid $border;
+  cursor: pointer;
+
+  // Не уверен что правильно сделал тень
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 334px;
@@ -39,11 +50,17 @@
   color: $black;
   margin: 0;
   margin-bottom: 10px;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 7px;
+    margin-left: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 28px;
   }
 }
 
@@ -52,10 +69,45 @@
   line-height: 30px;
   color: $blacklight;
   margin-bottom: 41px;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    margin-left: 33px;
+    margin-bottom: 170px;
+
+    &--dig-bascet {
+      margin-bottom: 150px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 28px;
+    margin-bottom: 35px;
+
+    &--dig-bascet {
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.product__wrap {
+  border-top: 1px solid $border;
+  margin-left: 28px;
+  margin-right: 28px;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 27px;
+    margin-right: 33px;
   }
 }
 
@@ -68,4 +120,18 @@
     font-size: 17px;
     line-height: 24px;
   }
+}
+
+.product__basket svg {
+  fill: $black;
+  opacity: 0.2;
+}
+
+.product__basket svg:hover {
+  fill: $greendark;
+  opacity: 1;
+}
+
+.product__basket svg:active {
+  opacity: 0.3;
 }

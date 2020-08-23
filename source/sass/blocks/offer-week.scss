@@ -77,6 +77,10 @@
 .offer-week__stats {
   font-size: 15px;
   line-height: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
 
   @media (min-width: $tablet-width) {
     width: 292px;
@@ -86,6 +90,20 @@
   @media (min-width: $desktop-width) {
     margin-left: 175px;
   }
+}
+
+.offer-week__item {
+  display: flex;
+  border-bottom: 1px solid $border;
+  padding-bottom: 10px;
+}
+
+.offer-week__specification {
+  width: 97px;
+}
+
+.offer-week__description {
+  margin: 0;
 }
 
 .offer-week__image {
@@ -101,7 +119,7 @@
 }
 
 .offer-week__price {
-  margin-bottom: 25px;
+  margin: 25px auto;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -111,6 +129,7 @@
     line-height: 24px;
     margin-bottom: 57px;
     width: 100%;
+    padding-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
