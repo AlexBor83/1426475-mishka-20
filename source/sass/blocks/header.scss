@@ -162,6 +162,12 @@
   &--search {
     position: relative;
 
+    & svg {
+      position: absolute;
+      left: 30px;
+      top: 35px;
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 0;
       width: 82px;
@@ -174,24 +180,18 @@
     }
   }
 
-  &--search svg {
-    position: absolute;
-    left: 30px;
-    top: 35px;
-  }
-
   &--cart {
     position: relative;
+
+    svg {
+      position: absolute;
+      left: 30px;
+      top: 35px;
+    }
 
     @media (min-width: $tablet-width) {
       height: 89px;
     }
-  }
-
-  &--cart svg {
-    position: absolute;
-    left: 30px;
-    top: 35px;
   }
 
   &--catalog {

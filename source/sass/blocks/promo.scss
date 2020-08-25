@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     margin-top: -45px;
     padding-top: 155px;
+    overflow-y: hidden;
   }
 }
 
@@ -40,14 +41,20 @@
   padding-top: 24px;
   padding-right: 160px;
   padding-left: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 36px;
   color: $wight;
   font-size: 19px;
   line-height: 24px;
   display: block;
   width: 100%;
+  transform: translateY(5px);
+  position: relative;
 
-  & svg {
+  &:hover {
+    transform: translateY(0);
+  }
+
+  svg {
     position: absolute;
     right: 20px;
     top: 25px;
@@ -64,25 +71,11 @@
   }
 
   &--interior {
-    position: relative;
     background-color: $green;
   }
 
-  /*Чет помоему не совсем получилось*/
-
-  &--interior:hover {
-    transform: translateY(-5px);
-    padding-bottom: 35px;
-  }
-
   &--toys {
-    position: relative;
     background-color: $greendark;
-  }
-
-  &--toys:hover {
-    transform: translateY(-5px);
-    padding-bottom: 35px;
   }
 
   @media (min-width: $tablet-width) {

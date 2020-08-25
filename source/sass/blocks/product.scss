@@ -125,13 +125,13 @@
 .product__basket svg {
   fill: $black;
   opacity: 0.2;
-}
 
-.product__basket svg:hover {
-  fill: $greendark;
-  opacity: 1;
-}
+  &:hover {
+    fill: $greendark;
+    opacity: 1;
+  }
 
-.product__basket svg:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }

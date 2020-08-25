@@ -50,6 +50,7 @@
   }
 
   &::after {
+    content: "";
     position: absolute;
     top: 25px;
     left: 0;
@@ -57,43 +58,40 @@
   }
 
   &--materials::after {
-    content: "";
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
     width: 33px;
     height: 38px;
   }
 
   &--style::after {
-    content: "";
-    background-image: url("../../img/icon-feature-money.svg");
+    background-image: url("../img/icon-feature-money.svg");
     width: 50px;
     height: 27px;
   }
 
   &--photo::after {
-    content: "";
-    background-image: url("../../img/icon-feature-heart.svg");
+    background-image: url("../img/icon-feature-heart.svg");
     width: 34px;
     height: 27px;
   }
 
   &--handmade::after {
     content: "";
-    background-image: url("../../img/icon-feature-ball.svg");
+    background-image: url("../img/icon-feature-ball.svg");
     width: 35px;
     height: 34px;
   }
 
   &--manufacturer::after {
     content: "";
-    background-image: url("../../img/icon-feature-rocket.svg");
+    background-image: url("../img/icon-feature-rocket.svg");
     width: 55px;
     height: 23px;
   }
 
   &--present::after {
     content: "";
-    background-image: url("../../img/icon-feature-gift.svg");
+    background-image: url("../img/icon-feature-gift.svg");
     width: 33px;
     height: 32px;
   }
