@@ -97,6 +97,15 @@
 .contacts__mail {
   color: $blacklight;
   border-bottom: 1px solid $green;
+
+  &:hover {
+    color: $greendark;
+    border-bottom: 1px solid $greendark;
+  }
+
+  &:active {
+    border-color: rgba(20, 144, 128, 0.1);
+  }
 }
 
 .contacts__map {
