@@ -60,6 +60,12 @@
     width: 100%;
     border: 2px solid $black;
     resize: none;
+    outline: none;
+
+    &:hover {
+      outline: none;
+      border-color: $green;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -88,6 +94,8 @@
   color: $green;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 35px;
+  display: block;
 
   input {
     padding: 17px 0;
@@ -146,13 +154,15 @@
   font-weight: bold;
 
   &--radio {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     margin-left: 60px;
   }
 
   &--check {
     margin-bottom: 45px;
   }
+
+  // Помоему не совсем получилось наведение
 
   &--name {
     margin-bottom: 54px;
@@ -163,8 +173,15 @@
       border-bottom: 2px solid $black;
       width: 100%;
       font-weight: normal;
+      outline: none;
+    }
+
+    input:hover {
+      border-color: $green;
     }
   }
+
+  // Как сделать белый фон по стаилгайду
 
   &--aboutme {
     color: $green;
@@ -178,6 +195,13 @@
       border: none;
       border-bottom: 2px solid $black;
       width: 100%;
+      color: $black;
+      outline: none;
+      background-color: $wight;
+    }
+
+    input:hover {
+      border-color: $green;
     }
   }
 
@@ -207,7 +231,6 @@
       }
     }
 
-
     &--aboutme {
       display: flex;
 
@@ -221,6 +244,8 @@
 }
 
 .form__label {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     &--name {
       margin-right: 25px;
@@ -240,20 +265,106 @@
 }
 
 .form-check__input {
-  display: none;
+  appearance: none;
+
+  &:checked + .form-check__disk::before {
+    z-index: 2;
+  }
+
+  &:checked + .form-check__check::before {
+    border-color: $green;
+  }
+
+  &:checked + .form-check__check::after {
+    z-index: 2;
+  }
 }
 
 .form-check__disk {
+  position: absolute;
+  left: -50px;
+  top: -8px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid $blacklight;
+  background-color: $wight;
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid $green;
+    background-color: $green;
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 52px;
+    height: 52px;
+    left: -90px;
+    top: -10px;
+
+    &::before {
+      width: 23px;
+      height: 23px;
+      top: 13px;
+      left: 13px;
+    }
   }
 }
 
 .form-check__check {
   margin-left: 62px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -8px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $blacklight;
+    background-color: $wight;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -52px;
+    top: -2px;
+    width: 23px;
+    height: 23px;
+    z-index: -1;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
+
+    &::before {
+      left: -100px;
+      top: -15px;
+      width: 52px;
+      height: 52px;
+      border: 2px solid $blacklight;
+      background-color: $wight;
+    }
+
+    &::after {
+      left: -90px;
+      top: 0;
+      width: 31px;
+      height: 23px;
+    }
   }
 }
 
