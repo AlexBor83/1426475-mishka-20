@@ -62,6 +62,15 @@
   width: 82px;
   border: 1px solid $border;
   background-color: $wight;
+  outline: none;
+
+  &:hover {
+    border-color: $blacklight;
+  }
+
+  &:active {
+    border-color: $green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 112px;

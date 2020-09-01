@@ -88,11 +88,37 @@
 .reviews__togles {
   margin-bottom: 38px;
   border: 1px solid $border;
+  height: 54px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 50px;
     bottom: 20px;
+  }
+}
+
+.reviews__togl {
+  padding: 0;
+  border: none;
+  background-color: $wight;
+  width: 126px;
+  height: 52px;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+
+  &--back {
+    border-right: 1px solid $border;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
