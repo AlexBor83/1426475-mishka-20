@@ -3,11 +3,45 @@
   background-color: $greylight;
   padding-top: 73px;
   border-top: 1px solid $border;
+  overflow-y: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    bottom: 310px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: -45px;
     padding-top: 155px;
     overflow-y: hidden;
+
+    &::before {
+      background-image: url("../img/hero-tablet@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
   }
 }
 
@@ -21,9 +55,10 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 116px;
   text-align: center;
   width: 260px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -38,10 +73,10 @@
 }
 
 .promo__item {
-  padding-top: 24px;
+  padding-top: 22px;
   padding-right: 160px;
   padding-left: 30px;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
   color: $wight;
   font-size: 19px;
   line-height: 24px;
@@ -56,8 +91,8 @@
 
   svg {
     position: absolute;
-    right: 20px;
-    top: 25px;
+    right: 35px;
+    top: 22px;
     fill: $greendarkvery;
     opacity: 0.5;
   }
@@ -76,6 +111,10 @@
 
   &--toys {
     background-color: $greendark;
+
+    svg {
+      right: 26px;
+    }
   }
 
   @media (min-width: $tablet-width) {

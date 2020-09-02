@@ -62,7 +62,7 @@
 .reviews__author {
   font-size: 17px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -78,6 +78,7 @@
     font-style: normal;
     display: block;
     margin: 0;
+    margin-bottom: 6px;
   }
 
   &--mail {
@@ -86,7 +87,7 @@
 }
 
 .reviews__togles {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
   border: 1px solid $border;
   height: 54px;
 
@@ -123,7 +124,7 @@
 }
 
 .reviews__write {
-  margin-bottom: 45px;
+  margin-bottom: 72px;
 
   @media (min-width: $tablet-width) {
     position: absolute;

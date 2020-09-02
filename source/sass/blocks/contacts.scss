@@ -11,7 +11,7 @@
 
 .contacts__wrap {
   padding: 0 30px;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
   width: 320px;
   margin: 0 auto;
 
@@ -34,7 +34,7 @@
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -54,6 +54,7 @@
   color: $blacklight;
   font-size: 15px;
   line-height: 30px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -73,6 +74,7 @@
 .contacts__item {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 29px;
 
   @media (min-width: $desktop-width) {
     &--mail {
@@ -91,7 +93,7 @@
 
 .contacts__description {
   margin: 0;
-  width: 180px;
+  width: 150px;
 }
 
 .contacts__mail {
@@ -110,7 +112,7 @@
 
 .contacts__map {
   display: block;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
   @media (min-width: $desktop-width) {
     width: 527px;
@@ -125,7 +127,7 @@
 }
 
 .contacts__write {
-  margin: 40px auto;
+  margin: 38px auto;
   display: block;
   width: 260px;
 
