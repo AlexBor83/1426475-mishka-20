@@ -2,10 +2,11 @@
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     width: 1150px;
-    padding: 100px 50px 105px 225px;
+    padding: 2px 50px 9px 225px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 95px;
   }
 }
 
@@ -18,16 +19,17 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 50px;
+    padding-top: 38px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 291px;
+    width: 340px;
     padding: 0;
     margin: 0;
-    padding-top: 79px;
-    align-self: start;
+    padding-top: 128px;
+    align-self: flex-start;
   }
 }
 
@@ -46,7 +48,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 }
 
@@ -76,9 +78,13 @@
   flex-wrap: wrap;
   margin-bottom: 29px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
   @media (min-width: $desktop-width) {
     &--mail {
-      margin-bottom: 20px;
+      margin-bottom: 29px;
     }
   }
 }
@@ -87,18 +93,30 @@
   width: 76px;
 
   @media (min-width: $desktop-width) {
-    width: 82px;
+    width: 77px;
   }
 }
 
 .contacts__description {
   margin: 0;
   width: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 258px;
+  }
 }
 
 .contacts__mail {
   color: $blacklight;
   border-bottom: 1px solid $green;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 
   &:hover {
     color: $greendark;
@@ -118,11 +136,18 @@
     width: 527px;
     height: 457px;
     margin: 0;
+    margin-bottom: 39px;
   }
 
   img {
     display: block;
     width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 527px;
+      height: 457px;
+      margin-top: 93px;
+    }
   }
 }
 
@@ -133,7 +158,8 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin: 55px auto;
+    margin: 54px auto;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {

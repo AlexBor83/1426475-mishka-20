@@ -5,14 +5,15 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 57px;
+    margin-top: 80px;
     gap: 53px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 122px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 52px;
   }

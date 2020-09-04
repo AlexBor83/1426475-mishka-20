@@ -6,11 +6,35 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    padding-bottom: 83px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 350px;
+      height: 457px;
+      bottom: 81px;
+      left: 0;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
+
+      @media (min-width: $desktop-width) {
+        bottom: 67px;
+        left: 50px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 90px;
+    padding-top: 86px;
     padding-left: 225px;
+    padding-bottom: 117px;
   }
 }
 
@@ -23,6 +47,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 83px;
     margin-bottom: 38px;
   }
 
@@ -69,7 +94,7 @@
     margin-bottom: 47px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 17px;
   }
 
@@ -83,6 +108,7 @@
 
   &--mail {
     color: $blacklight;
+    font-size: 17px;
   }
 }
 
@@ -93,8 +119,13 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 50px;
-    bottom: 20px;
+    border: none;
+    right: 30px;
+    bottom: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 126px;
   }
 }
 
@@ -109,9 +140,19 @@
   background-position: center;
   outline: none;
 
+  @media (min-width: $tablet-width) {
+    width: 86px;
+    background-position: left;
+  }
+
   &--back {
     border-right: 1px solid $border;
     transform: rotate(180deg);
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      background-position: right;
+    }
   }
 
   &:hover {
@@ -128,6 +169,13 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    margin: 0;
+    top: 159px;
     right: 50px;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 167px;
   }
 }

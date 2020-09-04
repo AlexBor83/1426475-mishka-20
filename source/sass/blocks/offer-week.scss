@@ -11,7 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 115px;
+    padding-top: 137px;
+    padding-left: 82px;
   }
 }
 
@@ -25,6 +26,8 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 60px;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,8 +35,9 @@
     line-height: 57px;
     margin: 0;
     padding: 0;
-    margin-left: 68px;
+    margin-left: 43px;
     z-index: 2;
+    margin-bottom: 36px;
   }
 }
 
@@ -50,13 +54,15 @@
   @media (min-width: $tablet-width) {
     width: 100px;
     line-height: 17px;
-    margin-left: auto;
-    margin-top: 46px;
+    margin-left: 127px;
+    margin-top: 64px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     order: -1;
     margin: 0;
+    padding-top: 9px;
   }
 }
 
@@ -72,8 +78,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
-    margin-right: 85px;
+    margin: 0;
+    margin-left: 143px;
+    margin-right: 117px;
   }
 }
 
@@ -91,10 +98,15 @@
   @media (min-width: $tablet-width) {
     width: 292px;
     margin-right: 45px;
+    margin-top: 29px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
+    margin-left: 143px;
+    margin-top: 58px;
+    row-gap: 5px;
+    margin-bottom: 88px;
   }
 }
 
@@ -102,6 +114,14 @@
   display: flex;
   border-bottom: 1px solid $border;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .offer-week__specification {
@@ -115,15 +135,15 @@
 .offer-week__image {
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 70px;
     width: 334px;
     height: 404px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 0;
-    right: 0;
+    bottom: 71px;
+    right: 50px;
     width: 525px;
     height: 636px;
   }
@@ -138,13 +158,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 57px;
+    margin-bottom: 30px;
     width: 100%;
-    padding-left: 90px;
+    padding-left: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
+    margin-left: 143px;
   }
 }
 
@@ -156,6 +176,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
+    margin-left: 143px;
   }
 }

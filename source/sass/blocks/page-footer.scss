@@ -6,13 +6,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-top: 58px;
-    margin-bottom: 67px;
+    padding-top: 58px;
+    padding-bottom: 34px;
   }
 }
 
 .page-footer__logo {
-  display: block;
+  img {
+    display: block;
+    margin-top: -6px;
+    width: 102px;
+    height: 34px;
+  }
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -25,10 +30,13 @@
   border-bottom: 1px solid $greydark;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     border: none;
+    margin-top: 0;
+    padding: 0;
   }
 }
+
+//Не могу подогнать под PP
 
 .page-footer__copyright {
   margin: 0 39px;
@@ -40,5 +48,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
   }
 }

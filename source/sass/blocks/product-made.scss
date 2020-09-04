@@ -1,5 +1,5 @@
 .product-made__container {
-  margin-top: 30px;
+  margin-top: 33px;
   margin-bottom: 58px;
   padding: 0;
   border: 1px solid $border;
@@ -26,8 +26,8 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin-top: 57px;
-    margin-bottom: 105px;
-    padding-left: 683px;
+    margin-bottom: 101px;
+    padding-left: 681px;
     position: relative;
   }
 }
@@ -36,7 +36,7 @@
   font-size: 17px;
   line-height: 24px;
   margin-top: 22px;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   margin-left: 91px;
   position: relative;
 
@@ -48,19 +48,19 @@
     background-position: center;
     width: 32px;
     height: 22px;
-    left: -50px;
-    top: 10px;
+    left: -58px;
+    top: 12px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 7px;
     margin-left: 107px;
 
     &::before {
-      left: -70px;
-      top: 0;
+      left: -67px;
+      top: -3px;
     }
   }
 
@@ -68,17 +68,23 @@
     width: 178px;
     margin-left: 80px;
     margin-top: 96px;
-    margin-bottom: 28px;
+    margin-bottom: 5px;
 
     &::before {
       left: 0;
-      top: -40px;
+      top: -51px;
     }
   }
 }
 
+.product-made__picture {
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
+
 .product-made__video {
-  margin-bottom: 35px;
+  margin-bottom: 18px;
   position: relative;
 
   &::before {
@@ -103,8 +109,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    order: -1;
-    margin-bottom: 41px;
+    order: -2;
+    margin-bottom: 35px;
     width: 668px;
     height: 455px;
   }
@@ -113,17 +119,7 @@
     width: 683px;
     position: absolute;
     left: 1px;
-  }
-
-  video {
-    @media (min-width: $tablet-width) {
-      width: 668px;
-      height: 455px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 683px;
-    }
+    margin-bottom: 0;
   }
 }
 
@@ -132,18 +128,19 @@
   line-height: 24px;
   color: $blacklight;
   margin-left: 34px;
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
     margin-left: 40px;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
     width: 252px;
-    margin-bottom: 52px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     margin-left: 80px;
   }
 }
@@ -151,17 +148,17 @@
 .product-made__order {
   width: 192px;
   margin-left: 34px;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     width: 584px;
-    margin-left: 42px;
-    margin-bottom: 46px;
+    margin-left: 43px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
-    margin-bottom: 60px;
-    margin-left: 80px;
+    margin-bottom: 59px;
+    margin-left: 82px;
   }
 }
