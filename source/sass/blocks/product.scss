@@ -29,7 +29,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     position: absolute;
-    left: -334px;
+    left: -333px;
     bottom: 0;
     width: 334px;
     height: 334px;
@@ -71,6 +71,10 @@
   margin-top: 5px;
   margin-bottom: 19px;
   margin-left: 28px;
+
+  &--dig-bascet {
+    margin-top: 7px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -142,5 +146,9 @@
     svg {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -4px;
   }
 }

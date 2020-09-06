@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 95px;
+    margin-bottom: 92px;
   }
 }
 
@@ -43,12 +43,29 @@
     line-height: 50px;
     margin-bottom: 49px;
     width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      width: 47px;
+      height: 81px;
+      position: absolute;
+      top: -23px;
+      right: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 36px;
+
+    &::before {
+      top: -19px;
+      left: -111px;
+    }
   }
 }
 
@@ -154,7 +171,6 @@
 .contacts__write {
   margin: 38px auto;
   display: block;
-  width: 260px;
 
   @media (min-width: $tablet-width) {
     width: 230px;

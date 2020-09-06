@@ -1,3 +1,35 @@
+.reviews {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-size: auto 16px;
+      width: 100%;
+      height: 24px;
+      bottom: -11px;
+      right: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-size: auto 22px;
+      bottom: -24px;
+    }
+  }
+}
+
 .reviews__container {
   padding-top: 58px;
 

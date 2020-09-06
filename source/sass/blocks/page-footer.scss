@@ -36,8 +36,6 @@
   }
 }
 
-//Не могу подогнать под PP
-
 .page-footer__copyright {
   margin: 0 39px;
   padding-top: 20px;
@@ -49,5 +47,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
+    transform: translateY(-9px);
   }
 }
