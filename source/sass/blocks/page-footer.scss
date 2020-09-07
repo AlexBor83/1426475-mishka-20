@@ -6,15 +6,47 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 34px;
   }
 }
 
 .page-footer__logo {
+  img {
+    display: block;
+    margin-top: -6px;
+    width: 102px;
+    height: 34px;
+  }
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
 
 .page-footer__social {
+  margin-top: 27px;
+  padding-bottom: 19px;
   border-bottom: 1px solid $greydark;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+.page-footer__copyright {
+  margin: 0 39px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    transform: translateY(-9px);
+  }
 }

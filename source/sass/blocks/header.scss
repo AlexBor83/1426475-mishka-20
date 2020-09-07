@@ -34,7 +34,8 @@
   @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
-    margin-left: 100px;
+    margin-left: 77px;
+    padding-top: 9px;
   }
 
   img {
@@ -68,9 +69,9 @@
   &--opend::after {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 15px;
-    width: 20px;
+    top: 15px;
+    right: 28px;
+    width: 25px;
     height: 2px;
     background-color: $black;
   }
@@ -95,10 +96,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    z-index: 1;
   }
 
   &--first {
-    margin-top: 23px;
+    margin-top: 21px;
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
@@ -139,7 +141,7 @@
   line-height: 24px;
   display: block;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   padding-left: 76px;
   color: $black;
   fill: $greyverylight;
@@ -156,7 +158,6 @@
   @media (min-width: $tablet-width) {
     padding-top: 33px;
     padding-bottom: 32px;
-    font-size: 15px;
   }
 
   &--search {
@@ -164,8 +165,8 @@
 
     svg {
       position: absolute;
-      left: 30px;
-      top: 35px;
+      left: 33px;
+      top: 31px;
     }
 
     @media (min-width: $tablet-width) {
@@ -177,6 +178,16 @@
       border-left: 1px solid $border;
       border-right: 1px solid $border;
       background-position: center;
+
+      svg {
+        top: 36px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      svg {
+        left: 30px;
+      }
     }
   }
 
@@ -185,12 +196,25 @@
 
     svg {
       position: absolute;
-      left: 30px;
-      top: 35px;
+      left: 31px;
+      top: 31px;
     }
 
     @media (min-width: $tablet-width) {
       height: 89px;
+      padding-left: 84px;
+
+      svg {
+        position: absolute;
+        left: 33px;
+        top: 35px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      svg {
+        left: 30px;
+      }
     }
   }
 
@@ -198,7 +222,8 @@
     @media (min-width: $tablet-width) {
       padding: 0;
       padding-top: 20px;
-      padding-right: 40px;
+      padding-right: 37px;
+      font-size: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -207,6 +232,7 @@
       padding-bottom: 32px;
       width: 184px;
       border-right: 1px solid $border;
+      font-size: 17px;
     }
   }
 
@@ -214,6 +240,7 @@
     @media (min-width: $tablet-width) {
       padding: 0;
       padding-top: 20px;
+      font-size: 15px;
     }
 
     @media (min-width: $desktop-width) {
@@ -221,6 +248,7 @@
       padding-top: 33px;
       padding-bottom: 32px;
       padding-left: 35px;
+      font-size: 17px;
     }
   }
 
@@ -228,7 +256,8 @@
     @media (min-width: $desktop-width) {
       padding: 0;
       padding-top: 20px;
-      padding-right: 45px;
+      padding-right: 62px;
+      font-size: 15px;
     }
   }
 
@@ -236,6 +265,7 @@
     @media (min-width: $desktop-width) {
       padding: 0;
       padding-top: 20px;
+      font-size: 15px;
     }
   }
 }
@@ -250,5 +280,6 @@
     display: block;
     padding-top: 20px;
     margin-left: auto;
+    z-index: 1;
   }
 }

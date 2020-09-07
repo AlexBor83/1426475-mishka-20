@@ -3,11 +3,68 @@
   background-color: $greylight;
   padding-top: 73px;
   border-top: 1px solid $border;
+  overflow-y: hidden;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    width: 100%;
+    height: 375px;
+    bottom: 129px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: -45px;
     padding-top: 155px;
     overflow-y: hidden;
+
+    &::before {
+      background-image: url("../img/hero-tablet@1x.jpg");
+      height: 753px;
+      bottom: -9px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+      width: 100%;
+      height: 31px;
+      position: absolute;
+      bottom: -21px;
+      right: 4px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-image: url("../img/hero-desktop@1x.jpg");
+      bottom: -11px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
+
+    &::after {
+      background-size: auto 37px;
+      bottom: -16px;
+      right: 50px;
+    }
   }
 }
 
@@ -15,33 +72,40 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .promo__title {
   font-size: 27px;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 116px;
   text-align: center;
   width: 260px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     width: 100%;
+    margin-bottom: 367px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 353px;
   }
 }
 
 .promo__item {
-  padding-top: 24px;
+  padding-top: 22px;
   padding-right: 160px;
   padding-left: 30px;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
   color: $wight;
   font-size: 19px;
   line-height: 24px;
@@ -56,8 +120,8 @@
 
   svg {
     position: absolute;
-    right: 20px;
-    top: 25px;
+    right: 35px;
+    top: 22px;
     fill: $greendarkvery;
     opacity: 0.5;
   }
@@ -76,14 +140,29 @@
 
   &--toys {
     background-color: $greendark;
+
+    svg {
+      right: 26px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
     width: 50%;
     font-size: 20px;
     line-height: 30px;
     padding-left: 36px;
     padding-right: 200px;
+
+    svg {
+      top: 29px;
+    }
+
+    &--toys {
+      svg {
+        right: 32px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
