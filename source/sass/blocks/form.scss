@@ -10,12 +10,12 @@
 
     &--name {
       padding-top: 62px;
-      padding-bottom: 47px;
+      padding-bottom: 50px;
     }
 
     &--aboutme {
       padding-top: 61px;
-      padding-bottom: 14px;
+      padding-bottom: 15px;
     }
 
     &--button {
@@ -32,6 +32,10 @@
     &--name {
       padding-top: 65px;
       padding-right: 225px;
+    }
+
+    &--aboutme {
+      padding-top: 56px;
     }
 
     &--aboutme,
@@ -86,7 +90,7 @@
   }
 
   &--textarea {
-    margin-bottom: 14px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $tablet-width) {
@@ -105,12 +109,13 @@
       display: flex;
       width: 100%;
       margin-top: 50px;
-      margin-bottom: 49px;
+      margin-bottom: 50px;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &--textarea {
+      margin-top: 49px;
       margin-bottom: 46px;
     }
   }
@@ -130,7 +135,7 @@
   }
 
   &--name {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   input {
@@ -227,10 +232,11 @@
   }
 
   &--name {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 
     input {
       padding: 14px 0;
+      padding-bottom: 17px;
       border: none;
       border-bottom: 2px solid $black;
       width: 100%;
@@ -245,13 +251,21 @@
 
   &--aboutme {
     color: $green;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     text-transform: uppercase;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 25px;
+      right: 7px;
+      opacity: 0.3;
+    }
 
     input {
       padding: 0;
-      padding-top: 12px;
-      padding-bottom: 20px;
+      padding-top: 17px;
+      padding-bottom: 18px;
       font-weight: normal;
       border: none;
       border-bottom: 2px solid $black;
@@ -263,6 +277,11 @@
 
     input:hover {
       border-color: $green;
+    }
+
+    input:hover + svg {
+      opacity: 1;
+      fill: $greendark;
     }
   }
 
@@ -283,13 +302,13 @@
     }
 
     &--name {
-      margin-bottom: 39px;
+      margin-bottom: 40px;
       display: flex;
 
       input {
         padding-top: 0;
         padding-left: 18px;
-        padding-bottom: 10px;
+        padding-bottom: 9px;
       }
 
       &:last-child {
@@ -302,12 +321,17 @@
       font-size: 17px;
       margin-bottom: 36px;
 
+      svg {
+        top: -9px;
+        right: 25px;
+      }
+
       input {
         padding-top: 0;
         padding-left: 18px;
         background-color: $grey;
         font-size: 19px;
-        padding-bottom: 14px;
+        padding-bottom: 12px;
       }
     }
   }
@@ -320,6 +344,11 @@
     }
 
     &--aboutme {
+      svg {
+        top: -3px;
+        right: 7px;
+      }
+
       input {
         padding-bottom: 15px;
       }
@@ -338,7 +367,7 @@
     &--aboutme {
       margin-right: 93px;
       width: 100px;
-      padding-top: 3px;
+      padding-top: 4px;
     }
   }
 

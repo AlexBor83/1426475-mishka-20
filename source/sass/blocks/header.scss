@@ -41,6 +41,14 @@
   img {
     display: block;
   }
+
+  &:hover img {
+    opacity: 0.6;
+  }
+
+  &:active img {
+    opacity: 0.3;
+  }
 }
 
 .header__toggle {
@@ -94,6 +102,10 @@
   margin: 0;
   list-style: none;
 
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     z-index: 1;
@@ -145,6 +157,7 @@
   padding-left: 76px;
   color: $black;
   fill: $greyverylight;
+
 
   &:hover {
     opacity: 0.6;
