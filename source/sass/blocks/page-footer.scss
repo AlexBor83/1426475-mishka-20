@@ -12,11 +12,19 @@
 }
 
 .page-footer__logo {
-  img {
+  svg {
     display: block;
     margin-top: -6px;
     width: 102px;
     height: 34px;
+  }
+
+  &:hover {
+    fill: $footerehover;
+  }
+
+  &:active {
+    fill: $footereactive;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -26,7 +34,7 @@
 
 .page-footer__social {
   margin-top: 27px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   border-bottom: 1px solid $greydark;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +46,7 @@
 
 .page-footer__copyright {
   margin: 0 39px;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -47,6 +55,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
-    transform: translateY(-9px);
+    transform: translateY(-11px);
   }
 }

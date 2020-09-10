@@ -15,4 +15,16 @@
 
 .copyright__link {
   margin-top: 5px;
+
+  svg {
+    fill: $green;
+  }
+
+  &:hover svg {
+    fill: $footerehover;
+  }
+
+  &:active svg {
+    fill: $footereactive;
+  }
 }

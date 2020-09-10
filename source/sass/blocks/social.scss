@@ -6,3 +6,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.social__link {
+  &:hover svg {
+    fill: $footerehover;
+  }
+
+  &:active svg {
+    fill: $footereactive;
+  }
+}
