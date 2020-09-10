@@ -1,10 +1,11 @@
-const mainNav = document.querySelector('.header-nav'), // находим блок, который у нас будет скрываться/открываться
+const mainNav = document.querySelector('.header__mobile'), // находим блок, который у нас будет скрываться/открываться
   mainNavButton = mainNav.querySelector('.header__toggle'); // находим кнопку открытия/закрытия
 
-mainNav.classList.remove('header__nav--nojs'); // так как по дефолту у нас без JS должно быть открыто меню - для него будет класс вот такой что записан тут (естественно в стилях этот класс "открывает" меню). Этот класс если js включится - удалится из разметки и меню скроется.
-
-if( window.innerWidth < 768) { // если размер окна меньше 768 - будет работать код ниже (нам же только на мобилке надо чтоб он работал)
+if (window.innerWidth < 768) {
+  mainNav.classList.add('header__mobile--closed');
   mainNavButton.addEventListener('click', () => { // регистрируем событие клика
-    mainNav.classList.toggle('header__toggle--opened'); // если класса на элементе, что выбран в mainNav нету - он добавится, если есть - удалится (toggle с английского - переключить, как тумблер). Соответственно в стилях этот класс должен делать меню "открытым"
+    mainNav.classList.toggle('header__mobile--closed');
+    mainNavButton.classList.toggle('header__toggle--closed');
+    mainNavButton.classList.toggle('header__toggle--opened');
   });
 }
