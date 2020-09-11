@@ -1,0 +1,126 @@
+
+.form-check__input {
+  appearance: none;
+
+  &:checked + .form-check__disk::before {
+    opacity: 1;
+  }
+
+  &:hover + .form-check__check::before,
+  &:focus + .form-check__check::before {
+    border-color: $green;
+  }
+
+  &:active + .form-check__check::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:checked + .form-check__check::after {
+    opacity: 1;
+  }
+}
+
+.form-check__disk {
+  position: absolute;
+  left: -57px;
+  top: -2px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid $blacklight;
+  background-color: $wight;
+  cursor: pointer;
+
+  &--toys {
+    top: -11px;
+  }
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid $green;
+    background-color: $green;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &:hover {
+    border-color: $green;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 52px;
+    height: 52px;
+    left: -74px;
+    top: -14px;
+
+    &::before {
+      width: 23px;
+      height: 23px;
+      top: 13px;
+      left: 13px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -76px;
+    top: -13px;
+  }
+}
+
+.form-check__check {
+  margin-left: 57px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: -9px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $blacklight;
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -52px;
+    top: -2px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    &::before {
+      left: -82px;
+      top: -13px;
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      left: -71px;
+      top: 3px;
+      width: 31px;
+      height: 23px;
+    }
+  }
+}
