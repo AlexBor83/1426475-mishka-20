@@ -33,6 +33,19 @@ const styles = () => {
 
 exports.styles = styles;
 
+const stylesbig = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.stylesbig = stylesbig;
+
 const scripts = () => {
   return gulp.src("source/js/app.js")
     .pipe(plumber())
@@ -58,6 +71,7 @@ const img = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
     ]))
 }
 
@@ -128,6 +142,7 @@ const build = gulp.series(
   copy,
   html,
   styles,
+  stylesbig,
   imgTask,
   scripts
 );

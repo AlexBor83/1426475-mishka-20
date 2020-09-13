@@ -15,8 +15,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 53px;
-    margin-bottom: 63px;
+    margin-top: 50px;
+    margin-bottom: 61px;
     width: 668px;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin: 0;
-    margin-bottom: 7px;
     margin-left: 107px;
 
     &::before {
@@ -68,7 +67,6 @@
     width: 178px;
     margin-left: 80px;
     margin-top: 96px;
-    margin-bottom: 5px;
 
     &::before {
       left: 0;
@@ -77,66 +75,74 @@
   }
 }
 
-.product-made__picture {
+.product-made__video {
   position: relative;
+  width: 260px;
+  height: 150px;
+  background-color: #b3b2b0;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 101px;
-    height: 77px;
-    left: 79px;
-    bottom: 58px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
   }
-
-  &:hover::before {
-    transform: scale(1.2);
-  }
-
-  &:active::before {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-
 
   @media (min-width: $tablet-width) {
     order: -2;
+    background-image: url("../img/video-tablet@1x.jpg");
+    width: 668px;
+    height: 455px;
+    margin-bottom: 38px;
 
-    &::before {
-      left: 282px;
-      bottom: 231px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 683px;
-    height: 455px;
+    background-image: url("../img/video-desktop@1x.jpg");
     position: absolute;
     left: 0;
 
-    &::before {
-      left: 290px;
-      bottom: 190px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
 }
 
-.product-made__video {
-  margin-bottom: 18px;
+.product-made__play {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 101px;
+  height: 77px;
+  left: 79px;
+  bottom: 35px;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
-    order: -2;
-    margin-bottom: 35px;
-    width: 668px;
-    height: 455px;
+    left: 282px;
+    bottom: 192px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-    width: 683px;
+    left: 290px;
+    bottom: 190px;
   }
 }
 
@@ -144,19 +150,23 @@
   font-size: 13px;
   line-height: 24px;
   color: $blacklight;
+  margin: 0;
+  margin-top: 35px;
   margin-left: 34px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 30px;
-    margin-left: 40px;
+    margin-left: 39px;
+    margin-right: 10px;
     margin-bottom: 39px;
+    margin-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
     width: 252px;
-    margin-top: 20px;
+    margin-top: 28px;
     margin-bottom: 50px;
     margin-left: 80px;
   }
@@ -169,7 +179,7 @@
 
   @media (min-width: $tablet-width) {
     width: 584px;
-    margin-left: 43px;
+    margin-left: 42px;
     margin-bottom: 44px;
     font-size: 17px;
   }

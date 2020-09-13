@@ -83,7 +83,8 @@
     line-height: 18px;
 
 
-    &:hover {
+    &:hover,
+    &:focus {
       outline: none;
       border-color: $green;
     }
@@ -244,7 +245,8 @@
       outline: none;
     }
 
-    input:hover {
+    input:hover,
+    input:focus {
       border-color: $green;
     }
   }
@@ -275,11 +277,13 @@
       background-color: $wight;
     }
 
-    input:hover {
+    input:hover,
+    input:focus {
       border-color: $green;
     }
 
-    input:hover + svg {
+    input:hover + svg,
+    input:focus + svg {
       opacity: 1;
       fill: $greendark;
     }
