@@ -17,18 +17,6 @@
   }
 }
 
-.header__mobile {
-  &--closed {
-    .header__nav {
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: flex;
-      }
-    }
-  }
-}
-
 .header__logo {
   display: block;
   width: 86px;
@@ -64,8 +52,8 @@
   }
 }
 
-.header__toggle {
-  display: block;
+.header__toggle { //Кнопка открытия или закрытия мобильного меню
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -76,7 +64,7 @@
   outline: none;
   background-color: transparent;
 
-  &--closed::before {
+  &--closed::before { //Кнопка при закрытом меню
     content: "";
     position: absolute;
     top: 11px;
@@ -88,7 +76,7 @@
   }
 
   &--opened::before,
-  &--opened::after {
+  &--opened::after { //Кнопка при открытом меню
     content: "";
     position: absolute;
     top: 15px;

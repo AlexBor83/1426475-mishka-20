@@ -46,18 +46,6 @@ const stylesbig = () => {
 
 exports.stylesbig = stylesbig;
 
-const scripts = () => {
-  return gulp.src("source/js/app.js")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(jsmin())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(sourcemap.write('.'))
-    .pipe(gulp.dest("build/js"));
-}
-
-exports.scripts = scripts;
-
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -144,7 +132,6 @@ const build = gulp.series(
   styles,
   stylesbig,
   imgTask,
-  scripts
 );
 
 exports.build = build;
@@ -153,7 +140,6 @@ exports.build = build;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/**/*.js", gulp.series("scripts"));
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
 
